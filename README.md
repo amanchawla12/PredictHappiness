@@ -11,7 +11,9 @@ Text Classification using SVM
 - pickle
 
 **About the data:**
-The Feature included text, Device, Browser. raw_train.csv contains the raw text data and new_train.csv contains the cleaned data(stemmed).
+The Feature included text, Device, Browser.
+
+"raw_train.csv" contains the raw text data and "new_train.csv" contains the cleaned data(stemmed).
 
 The model is serialized using pickle library and the model is exposed using API written using flask framework. For testing purpose the input
 is taken from the feedback.html and output is shown on response.html
