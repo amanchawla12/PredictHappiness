@@ -1,0 +1,13 @@
+body{
+    background-color: #5D5F60;
+    padding-top: 30px;
+}
+.heading{
+    font-size: 20px;
+}
+.jumbotron{
+    margin: auto;
+}
+.pred{
+    background-color: #5D5F60;
+}

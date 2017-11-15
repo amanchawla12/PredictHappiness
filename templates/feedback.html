@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+  <div class="row">
+  <div class="col-md-4 col-sm-6 jumbotron container">
+  <center><p class="btn btn-warning heading">Feedback for the services provided</p></center><hr>
+  <div class="row">
+  <div class="col-md-12">
+	<form class="form" action="/process" method="post"> 
+	  Browser Used :
+	  <select class="form-control" id="Browser" name="browser">
+	      <option value="" disabled selected required>Select from the list</option>
+		  <option value="IE">IE</option>
+		  <option value="Firefox">Firefox</option>
+		  <option value="Safari">Safari</option>
+		  <option value="Opera">Opera</option>
+		  <option value="Chrome">Chrome</option>
+		  <option value="Edge">Edge</option>
+	  </select><br>
+	  Reviews :<textarea class="form-control" rows="5" name="description" required></textarea><br>
+	  Device Used :
+	  <select class="form-control" id="Device" name="device">
+	      <option value="" disabled selected required>Select from the list</option>
+		  <option value="Mobile">Mobile</option>
+		  <option value="Tablet">Tablet</option>
+		  <option value="Desktop">Desktop</option>
+	  </select><br>
+	  <input type="submit" class="btn btn-primary btn-block" name="ok">
+    </form>
+	
+  </div> 
+  </div>
+  </div>
+  </div>
+  </body>
+</html>
